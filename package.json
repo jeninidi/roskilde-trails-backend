@@ -1,0 +1,25 @@
+{
+  "name": "roskilde-trails-backend",
+  "version": "1.0.0",
+  "description": "Backend solution for API construction assignment",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "nodejs",
+    "express",
+    "trails",
+    "backend"
+  ],
+  "author": "Best group ever",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3-rc.0",
+    "sequelize": "^6.9.0"
+  }
+}
