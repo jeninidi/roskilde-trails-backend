@@ -9,9 +9,6 @@ module.exports = app => {
     // Retrieve all Trails
     router.get("/", trail.findAll);
   
-    // Retrieve all published Trails
-    router.get("/published", trail.findAllPublished);
-  
     // Retrieve a single Trail with id
     router.get("/:id", trail.findOne);
   
@@ -21,7 +18,7 @@ module.exports = app => {
     // Delete a Trail with id
     router.delete("/:id", trail.delete);
   
-    // Create a new Trail
+    // Delete all trails
     router.delete("/", trail.deleteAll);
   
     app.use('/api/trail', router);

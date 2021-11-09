@@ -18,7 +18,6 @@ exports.create = (req, res) => {
     length: req.body.length,
     description: req.body.description,
     rating: req.body.rating,
-    published: req.body.published ? req.body.published : false
   };  
 
 // Save Trail in the database
@@ -134,20 +133,7 @@ exports.deleteAll = (req, res) => {
         });
 };
 
-// Find all published Trails
-exports.findAllPublished = (req, res) => {
-    Trail.findAll({ where: { published: true } })
-    .then(data => {
-      res.send(data);
-    })
-    .catch(err => {
-      res.status(500).send({
-        message:
-          err.message || "Some error occurred while retrieving trails."
-      });
-    });
 
-};
 
 
 
