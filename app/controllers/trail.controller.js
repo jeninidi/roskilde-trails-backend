@@ -74,7 +74,7 @@ exports.update = (req, res) => {
       where: { id: id }
     })
       .then(num => {
-          //if (num > 0) { 
+          //if 1 row was updated 
         if (num == 1) {
           res.send({
             message: "Trail was updated successfully."
