@@ -17,7 +17,7 @@ exports.create = (req, res) => {
     name: req.body.name,
     length: req.body.length,
     description: req.body.description,
-    rating: req.body.rating,
+    completionTime: req.body.completionTime,
   };  
 
 // Save Trail in the database
@@ -74,7 +74,7 @@ exports.update = (req, res) => {
       where: { id: id }
     })
       .then(num => {
-          //if (num > 0) { 
+          //if 1 row was updated 
         if (num == 1) {
           res.send({
             message: "Trail was updated successfully."
