@@ -1,5 +1,8 @@
 module.exports = (sequelize, Sequelize) => {
     const Trail = sequelize.define("trail", {
+      trail_id: {
+        type: Sequelize.INTEGER
+      },
       name: {
         type: Sequelize.STRING
       },
@@ -7,8 +10,27 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.STRING
       },
       length: {
+        type: Sequelize.FLOAT
+      },
+      est_time: {
+        type: Sequelize.STRING
+      },
+      pos_start: {
+        type: Sequelize.FLOAT
+      },
+      pos_end: {
+        type: Sequelize.FLOAT
+      },
+      rating: {
+        type: Sequelize.FLOAT
+      },
+      category_id: {
+        type: Sequelize.INTEGER
+      },
+      trail_pic: {
         type: Sequelize.STRING
       }
+      
     });
   
     return Trail;
