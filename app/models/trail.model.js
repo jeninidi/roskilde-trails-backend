@@ -24,8 +24,8 @@ module.exports = (sequelize, Sequelize) => {
       rating: {
         type: Sequelize.FLOAT
       },
-      category_id: {
-        type: Sequelize.INTEGER
+      category: {
+        type: Sequelize.STRING
       },
       trail_pic: {
         type: Sequelize.STRING

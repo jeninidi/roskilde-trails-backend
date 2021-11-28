@@ -18,7 +18,9 @@ exports.create = (req, res) => {
     length: req.body.length,
     description: req.body.description,
     completionTime: req.body.completionTime,
-    est_time: req.body.est_time
+    est_time: req.body.est_time,
+    category: req.body.category,
+    trail_pic: req.body.trail_pic
   };  
 
 // Save Trail in the database
