@@ -24,7 +24,7 @@ exports.create = (req, res) => {
     rating: req.body.rating
   };  
 
-// Save Trail in the database
+// Save Trail in the database 
   Trail.create(trail)
     .then(data => {
       res.send(data);
