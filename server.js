@@ -25,9 +25,10 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to the backend solution of The best group ever!" });
 });
 
-require("./app/routes/trail.routes")(app);
+require("./app/routes/trail.routes", "./app/routes/user.routes")(app);
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
+
